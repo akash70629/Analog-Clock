@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgb(238,174,202); */
+    background: radial-gradient(rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+
+.clock{
+   height: 300px;
+   width: 300px;
+    background-color: rgb(49,47,47);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.7), 0px 0px 20px rgba(0,0,0,0.7);
+    font-size: 22px;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative;  */
+}
+
+li{
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--backpain)));
+    inset: 225px;
+    /* inset: 185px; */
+}
+
+
+li span{
+    transform: rotate(calc(-30deg * var(--backpain)));
+    display: inline-block;
+}
+
+
+.clock:after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.needle{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.needle span{
+    position: absolute;
+    border-radius: 5px;
+}
+
+.hr span {
+    height:60px; 
+    width: 5px;
+    background-color:red;
+}
+
+.mn span {
+    height:80px; 
+    width: 3px;
+    background-color:blue;
+}
+
+.ss span {
+    height:70px; 
+    width: 1px;
+    background-color:white;
+}
+
+@media only screen and (max-width:470px) {
+
+    li{
+        inset: 232px;
+        margin-left: 3px;
+    }
+}
+
+
+@media only screen and (max-width:460px) {
+
+    li {
+        inset: 234px;
+        margin-left: -15px;
+    }   
+}
+
+@media only screen and (max-width:447px) {
+
+    li {
+        margin-left: -18px;
+    } 
+}
+
+@media only screen and (max-width:440px) {
+
+    li {
+        margin-left: -32px;
+    }   
+}
+
+
+@media only screen and (max-width:426px) {
+
+    li {
+        margin-left: -46px;
+    }   
+}
+
+
+@media only screen and (max-width:410px) {
+
+    li {
+        margin-left: -61px;
+    }
+}
+
+@media only screen and (max-width:398px) {
+
+    li {
+        margin-left: -76px;
+    }
+}
+
+
+@media only screen and (max-width:384px) {
+
+    li {
+        margin-left: -86px;
+    } 
+}
+
+@media only screen and (max-width:377px) {
+
+    li {
+        margin-left: -104px;
+    }  
+}
