@@ -1,5 +1,7 @@
 # It's an Analog Clock
 
+# It's still in the development phase, so it might not be responsive on your phone's screen.😓
+
 Here is the link - https://akash70629.github.io/Analog-Clock/
 
 5 PM is a good time by the way 😉🌳
